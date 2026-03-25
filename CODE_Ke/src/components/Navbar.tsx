@@ -23,10 +23,9 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#0a0a0b]/80 backdrop-blur-md border-b border-[#27272a] py-3' : 'bg-transparent py-6'}`}>
       <div className="container flex justify-between items-center">
-        <div className="flex items-center space-x-2">
-          <div className="relative">
-            <CodeIcon className="w-8 h-8 text-[#00A3FF]" />
-            <Shield className="w-4 h-4 text-[#00FF41] absolute -bottom-1 -right-1" />
+        <div className="flex items-center space-x-3">
+          <div className="relative w-10 h-10 overflow-hidden rounded-lg border border-[#27272a]">
+            <img src="/logo.jpg" alt="CODE KE Logo" className="w-full h-full object-cover" />
           </div>
           <span className="text-xl font-bold tracking-tighter">
             CODE <span className="text-[#00A3FF]">KE</span>
